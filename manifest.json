@@ -1,0 +1,13 @@
+{
+  "id": "omni-output-filter",
+  "name": "Omni Output Filter",
+  "description": "Compresses bash/shell tool output before it enters the agent context. Deduplicates repeated lines, collapses blank lines, trims npm/cargo/git noise, and caps long lines. Works with all LLM providers.",
+  "author": "GraysonBannister",
+  "version": "1.0.0",
+  "tags": ["token-efficiency", "performance", "bash", "context"],
+  "repo": "https://github.com/GraysonBannister/omni-output-filter",
+  "download": "https://github.com/GraysonBannister/omni-output-filter/archive/refs/heads/main.zip",
+  "entrypoint": "index.js",
+  "minOmniCodeVersion": "2.0.0",
+  "platforms": ["desktop"]
+}
