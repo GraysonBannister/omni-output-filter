@@ -243,10 +243,11 @@ function filterOutput(toolName, output) {
 /** @param {import('@omni-code/addon-api').AddonContext} context */
 function activate(context) {
   context.registerToolOutputFilter(filterOutput);
+  console.log('[omni-output-filter] Activated — output filter registered for tools:', [...FILTERED_TOOLS].join(', '));
 }
 
 function deactivate() {
-  // Filters are cleared automatically on reload — nothing to clean up.
+  console.log('[omni-output-filter] Deactivated');
 }
 
 module.exports = { activate, deactivate };
